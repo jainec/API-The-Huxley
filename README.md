@@ -2,8 +2,12 @@ API para o juiz online brasileiro The Huxley. Esta API gera mensagens de erros d
 
 Por exemplo, ao submeter o trecho de código abaixo no juiz online The Huxley:
 
-	long float t=0,a=0,b=0,c=0,d=0,x=0,y=0;
-             ^
+	#include <stdio.h>
+	
+	int main() {
+		long float t=0,a=0,b=0,c=0,d=0,x=0,y=0;
+		return 0;
+	}
   
 o usuário recebe tal mensagem de erro:
 
