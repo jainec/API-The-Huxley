@@ -2,8 +2,8 @@ API para o juiz online brasileiro The Huxley. Esta API gera mensagens de erros d
 
 Por exemplo, ao submeter o trecho de código abaixo no juiz online The Huxley:
 
-	**long float t=0,a=0,b=0,c=0,d=0,x=0,y=0;
-          ^**
+	long float t=0,a=0,b=0,c=0,d=0,x=0,y=0;
+             ^
   
 o usuário recebe tal mensagem de erro:
 
@@ -15,8 +15,8 @@ Mas através desta API, o usuário passa a receber a mensagem de erro abaixo:
 **Na função 'main':
 Erro na linha 6
 No trecho de código:
-		long float t=0,a=0,b=0,c=0,d=0,x=0,y=0;
-         ^**
+	long float t=0,a=0,b=0,c=0,d=0,x=0,y=0;
+             ^
 
 **Descrição: Em C não é permitido usar 'long' e 'float' juntos para declarar variáveis. Para corrigir o erro retire o 'float' da declaração e lembre-se de que os tipos primitivos para declarar variáveis em C são: char, unsigned char, int, unsigned int, short int, unsigned short int, long int, unsigned long int, float, double e long double.**
 
