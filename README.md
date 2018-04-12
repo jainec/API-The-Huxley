@@ -7,14 +7,16 @@ Por exemplo, ao submeter o trecho de código abaixo no juiz online The Huxley:
   
 o usuário recebe tal mensagem de erro:
 
-**/Matrizes.c: In function ‘main’:
-/Matrizes.c:6:8: error: both ‘long’ and ‘float’ in declaration specifiers**
+**/Matrizes.c: In function ‘main’:**
+
+**/Matrizes.c:6:8: error: both ‘long’ and ‘float’ in declaration specifiers**
 
 Mas através desta API, o usuário passa a receber a mensagem de erro abaixo:
 
 **Na função 'main':
 Erro na linha 6
-No trecho de código:
+No trecho de código:**
+
 	long float t=0,a=0,b=0,c=0,d=0,x=0,y=0;
              ^
 
