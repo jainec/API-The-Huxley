@@ -1,0 +1,57 @@
+
+Para executar o código, navegue até o pacote errors e execute o comando: python main.py
+O arquivo main é o responsável pela execução de todo o projeto.
+O servidor estará rodando em: http://localhost:8080/
+Utilize o programa PostMan ou execute a requisição manualmente através do método POST, passando como parâmetro 
+o erro de programação. Lembrando que o nome do parâmetro é errorMsg.
+
+O server está configurado localmente, para personalizar, abra o arquivo main do pacote erros.
+Configure a última linha deste arquivo conforme seu endereço de servidor.
+if __name__ == '__main__':    
+    run(host='localhost', port=8080) # Modificar esta linha
+
+              
+				Utilizando o padrão de projetos Chain of Responsability
+        
+        
+    Definindo o formato geral da cadeia geral de busca:
+    [ 
+        {
+            "ClasseErro1": [{"idErro1":metodo1()}, {"idErro2:metodo2()"}, {...}]
+        },
+        {
+            "ClasseErro2":[{{"idErro1":metodo1()}, {"idErro2":metodo2()}, {... }]
+        }, {...}
+    ]
+    
+    [
+        {
+            dicionárioClasse:[
+                        {dicionárioErros}
+                      ]
+        }
+    ]
+
+    
+    Para inserir nova classe de erro e mensagem de erro:
+    
+    1) Criar uma classe com o nome da classe de erro
+    
+    2) Definir os parâmetros:
+    	id = "ClasseError"
+    	msg = "" # mensagem de erro
+    	No construtor:
+    	# dicionário de erro com a id do erro e sua função de manipulação
+    	erro1 = {"erro 1":self.func1()}
+        erro2 = {"erro sintax 2":self.func2()}
+    
+    3) Definir as funções que manipulam cada mensagem de erro
+    
+    4) Criar função getErrors() para retornar um dicionário com o id da classe e os dicionários de erros
+	    def getErros(self):
+	        return {self.id:[self.erro1, self.erro2]}
+	
+	5) Inserir a instância da classe criada na classe Main, no método ChainResponsability(),
+	para que a nova classe possa fazer parte da cadeia de busca.
+	
+	
