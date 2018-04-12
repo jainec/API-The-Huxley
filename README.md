@@ -26,4 +26,7 @@ No trecho de código:**
 
 **Descrição: Em C não é permitido usar 'long' e 'float' juntos para declarar variáveis. Para corrigir o erro retire o 'float' da declaração e lembre-se de que os tipos primitivos para declarar variáveis em C são: char, unsigned char, int, unsigned int, short int, unsigned short int, long int, unsigned long int, float, double e long double.**
 
-Assim, o usuário tem uma mensagem mais clara sobre o erro que está cometendo e dicas de como resvolver tal errro.
+Assim, o usuário tem uma mensagem mais clara sobre o erro que está cometendo e dicas de como resvolver tal errro facilitando o seu aprendizado.
+
+
+===================================================================================================================================
