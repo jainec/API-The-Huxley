@@ -33,4 +33,4 @@ Assim, o usuário tem uma mensagem mais clara sobre o erro que está cometendo e
 
 ##################################################################################################
 
-API for the brazilian online judge The Huxley. 
+API for the brazilian online judge The Huxley. This API generates more friendly and understandable syntax errors for C and Python languages for novice programmers using The Huxley, so these programmers can better understand where and what error they are making, and also get tips on how to correct such error, in addition to learning more about the programming language in question.
